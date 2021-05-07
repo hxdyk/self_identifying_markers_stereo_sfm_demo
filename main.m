@@ -6,8 +6,8 @@ clc;clear;close all;
 % points_left以及points_right是cell数组，里面存放了各个图像内提取出的特征点及其序号
 
 img_location = '.\registration_image\';
-idx = 1:1:25;
-idx_bias = 0;
+idx = 15:1:25; % [1,10]或[15, 25]
+idx_bias = 14;
 
 points_right = {};
 for i = idx
@@ -46,8 +46,8 @@ load('.\CameraParams.mat');
 %% demo: 特征点序号可视化
 % 展示points_left及points_right的用法。
 
-img_idx = 5; % 选择范围: [1, 25]
-view_type = 'left'; % 选择范围: {'right', 'left', 'stereo'}
+img_idx = 25; % 选择范围: [1, 25]
+view_type = 'stereo'; % 选择范围: {'right', 'left', 'stereo'}
 format = '.jpg';
 
 if strcmp(view_type,'right')||strcmp(view_type,'stereo')
