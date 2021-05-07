@@ -1,6 +1,6 @@
 # self_identifying_markers_stereo_sfm_demo
 
-## /feature_detection/*.exe
+## \feature_detection\\*.exe
 
 里面有生成好的图案检测程序CheckboardLocalization.exe，或者可以使用CheckboardLocalizationNoDisplay.exe。
 
@@ -24,7 +24,7 @@
 
 相较于CheckboardLocalization**NoDisplay**.exe，CheckboardLocalization.exe在生成结果的同时，还会弹出一个窗口展示输出结果，同时在exe目录下生成imgDisplay.bmp供参考。
 
-## /feature_detection/feature_detection.bat
+## \feature_detection\feature_detection.bat
 
 这是一个批处理文件，用来使用CheckboardLocalizationNoDisplay.exe对..\registration_image中的所有图像进行检测。双击即可bat文件即可执行。
 
@@ -43,3 +43,6 @@ pause
 3. %~dp0的含义是批处理所在目录，参见https://blog.csdn.net/xieyunc/article/details/80471107
 4. @path表示文件的完整的路径，参见https://www.cnblogs.com/landv/p/6661461.html
 
+## .\main.m
+
+展示了如何将exe程序处理得到的txt结果导入到matlab工作环境中。内含一个在图片上表示序号的demo
